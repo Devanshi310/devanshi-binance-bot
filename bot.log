@@ -1,0 +1,108 @@
+[2025-08-17 22:17:31] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:17:31] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:18:25] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:18:25] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:18:25] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:18:27] [INFO] [place_market_order] - Current price for BTCUSDT: 118030.2
+[2025-08-17 22:18:27] [INFO] [log_order] - Action: MARKET_ORDER_ATTEMPT | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: 118030.2 | Status: PENDING
+[2025-08-17 22:18:27] [INFO] [place_market_order] - DRY RUN: Order would be placed but dry_run=True
+[2025-08-17 22:18:39] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:18:39] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:18:39] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:18:41] [INFO] [place_market_order] - Current price for BTCUSDT: 117973.9
+[2025-08-17 22:18:42] [INFO] [log_order] - Action: MARKET_ORDER_ATTEMPT | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: 117973.9 | Status: PENDING
+[2025-08-17 22:18:42] [INFO] [place_market_order] - Placing order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+[2025-08-17 22:18:42] [INFO] [log_order] - Action: MARKET_ORDER_SUCCESS | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: 117973.9 | OrderID: 5593235995 | Status: NEW
+[2025-08-17 22:23:46] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:23:46] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:23:46] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:23:46] [INFO] [validate_price] - Price validated: 40000.0
+[2025-08-17 22:23:48] [INFO] [place_limit_order] - Current price for BTCUSDT: 117822.5
+[2025-08-17 22:23:48] [WARNING] [validate_limit_price] - Limit price 40000.0 is 66.1% away from market price 117822.5
+[2025-08-17 22:23:50] [INFO] [log_order] - Action: LIMIT_ORDER_ATTEMPT | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: 40000.0 | Status: PENDING
+[2025-08-17 22:23:50] [INFO] [place_limit_order] - DRY RUN: Order would be placed but dry_run=True
+[2025-08-17 22:24:08] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:24:08] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:24:08] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:24:08] [INFO] [validate_price] - Price validated: 40000.0
+[2025-08-17 22:24:10] [INFO] [place_limit_order] - Current price for BTCUSDT: 118042.5
+[2025-08-17 22:24:10] [WARNING] [validate_limit_price] - Limit price 40000.0 is 66.1% away from market price 118042.5
+[2025-08-17 22:24:11] [INFO] [log_order] - Action: LIMIT_ORDER_ATTEMPT | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: 40000.0 | Status: PENDING
+[2025-08-17 22:24:11] [INFO] [place_limit_order] - Placing limit order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 40000.0, 'timeInForce': 'GTC'}
+[2025-08-17 22:24:11] [INFO] [log_order] - Action: LIMIT_ORDER_SUCCESS | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: 40000.0 | OrderID: 5593246946 | Status: NEW
+[2025-08-17 22:28:46] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:28:46] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:28:46] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:28:46] [INFO] [validate_price] - Price validated: 47000.0
+[2025-08-17 22:28:46] [INFO] [validate_price] - Price validated: 47500.0
+[2025-08-17 22:28:48] [INFO] [place_stop_limit_order] - Current price for BTCUSDT: 117900.0
+[2025-08-17 22:28:48] [ERROR] [validate_stop_limit_prices] - BUY stop price 47000.0 should be above current price 117900.0
+[2025-08-17 22:28:48] [ERROR] [handle_api_error] - STOP_LIMIT_ORDER failed: Invalid price relationships for stop-limit order
+[2025-08-17 22:28:48] [ERROR] [handle_api_error] - Stack trace: Traceback (most recent call last):
+  File "D:\Devanshi_binance_bot\src\advanced\stop_limit.py", line 91, in place_stop_limit_order
+    raise ValueError("Invalid price relationships for stop-limit order")
+ValueError: Invalid price relationships for stop-limit order
+
+[2025-08-17 22:28:48] [ERROR] [log_order] - Action: STOP_LIMIT_ORDER_FAILED | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: Stop:47000.0,Limit:47500.0 | Status: FAILED | Error: STOP_LIMIT_ORDER failed: Invalid price relationships for stop-limit order
+[2025-08-17 22:28:52] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:28:52] [INFO] [validate_side] - Side validated: SELL
+[2025-08-17 22:28:52] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:28:52] [INFO] [validate_price] - Price validated: 46000.0
+[2025-08-17 22:28:52] [INFO] [validate_price] - Price validated: 44000.0
+[2025-08-17 22:28:54] [INFO] [place_oco_order] - Current price for BTCUSDT: 117948.2
+[2025-08-17 22:28:54] [ERROR] [validate_oco_prices] - Take profit 46000.0 should be above current price 117948.2
+[2025-08-17 22:28:54] [ERROR] [handle_api_error] - OCO_ORDER failed: Invalid price relationships for OCO order
+[2025-08-17 22:28:54] [ERROR] [handle_api_error] - Stack trace: Traceback (most recent call last):
+  File "D:\Devanshi_binance_bot\src\advanced\oco.py", line 149, in place_oco_order
+    raise ValueError("Invalid price relationships for OCO order")
+ValueError: Invalid price relationships for OCO order
+
+[2025-08-17 22:28:54] [ERROR] [log_order] - Action: OCO_ORDER_FAILED | Symbol: BTCUSDT | Side: SELL | Qty: 0.01 | Price: TP:46000.0,SL:44000.0 | Status: FAILED | Error: OCO_ORDER failed: Invalid price relationships for OCO order
+[2025-08-17 22:29:34] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:29:34] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:29:34] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:29:34] [INFO] [validate_price] - Price validated: 47000.0
+[2025-08-17 22:29:34] [INFO] [validate_price] - Price validated: 47500.0
+[2025-08-17 22:29:36] [INFO] [place_stop_limit_order] - Current price for BTCUSDT: 117910.0
+[2025-08-17 22:29:36] [ERROR] [validate_stop_limit_prices] - BUY stop price 47000.0 should be above current price 117910.0
+[2025-08-17 22:29:36] [ERROR] [handle_api_error] - STOP_LIMIT_ORDER failed: Invalid price relationships for stop-limit order
+[2025-08-17 22:29:36] [ERROR] [handle_api_error] - Stack trace: Traceback (most recent call last):
+  File "D:\Devanshi_binance_bot\src\advanced\stop_limit.py", line 91, in place_stop_limit_order
+    raise ValueError("Invalid price relationships for stop-limit order")
+ValueError: Invalid price relationships for stop-limit order
+
+[2025-08-17 22:29:36] [ERROR] [log_order] - Action: STOP_LIMIT_ORDER_FAILED | Symbol: BTCUSDT | Side: BUY | Qty: 0.01 | Price: Stop:47000.0,Limit:47500.0 | Status: FAILED | Error: STOP_LIMIT_ORDER failed: Invalid price relationships for stop-limit order
+[2025-08-17 22:30:13] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:30:13] [INFO] [validate_side] - Side validated: SELL
+[2025-08-17 22:30:13] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:30:13] [INFO] [validate_price] - Price validated: 46000.0
+[2025-08-17 22:30:13] [INFO] [validate_price] - Price validated: 44000.0
+[2025-08-17 22:30:15] [INFO] [place_oco_order] - Current price for BTCUSDT: 117438.0
+[2025-08-17 22:30:15] [ERROR] [validate_oco_prices] - Take profit 46000.0 should be above current price 117438.0
+[2025-08-17 22:30:15] [ERROR] [handle_api_error] - OCO_ORDER failed: Invalid price relationships for OCO order
+[2025-08-17 22:30:15] [ERROR] [handle_api_error] - Stack trace: Traceback (most recent call last):
+  File "D:\Devanshi_binance_bot\src\advanced\oco.py", line 149, in place_oco_order
+    raise ValueError("Invalid price relationships for OCO order")
+ValueError: Invalid price relationships for OCO order
+
+[2025-08-17 22:30:15] [ERROR] [log_order] - Action: OCO_ORDER_FAILED | Symbol: BTCUSDT | Side: SELL | Qty: 0.01 | Price: TP:46000.0,SL:44000.0 | Status: FAILED | Error: OCO_ORDER failed: Invalid price relationships for OCO order
+[2025-08-17 22:30:56] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:30:56] [INFO] [validate_side] - Side validated: BUY
+[2025-08-17 22:30:56] [INFO] [validate_quantity] - Quantity validated: 0.1
+[2025-08-17 22:30:58] [INFO] [log_order] - Action: TWAP_STRATEGY_START | Symbol: BTCUSDT | Side: BUY | Qty: 0.1 | Price: Duration:10min,Orders:3 | Status: PENDING
+[2025-08-17 22:33:52] [INFO] [validate_symbol] - Symbol validated: BTCUSDT
+[2025-08-17 22:33:52] [INFO] [validate_price] - Price validated: 110000.0
+[2025-08-17 22:33:52] [INFO] [validate_price] - Price validated: 125000.0
+[2025-08-17 22:33:52] [INFO] [validate_quantity] - Quantity validated: 0.01
+[2025-08-17 22:33:53] [INFO] [calculate_grid_levels] - Grid calculated: 5 buy levels, 5 sell levels
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place BUY order at 110000.0
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place BUY order at 111666.66666666667
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place BUY order at 113333.33333333333
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place BUY order at 115000.0
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place BUY order at 116666.66666666667
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place SELL order at 118333.33333333333
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place SELL order at 120000.0
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place SELL order at 121666.66666666667
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place SELL order at 123333.33333333333
+[2025-08-17 22:33:54] [INFO] [place_grid_order] - DRY RUN: Would place SELL order at 125000.0
+[2025-08-17 22:33:54] [INFO] [log_order] - Action: GRID_INITIALIZED | Symbol: BTCUSDT | Side: BOTH | Qty: 0.1 | Price: Range:110000.0-125000.0 | Status: PENDING

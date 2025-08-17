@@ -52,8 +52,8 @@ cd devanshi-binance-bot
 
 2) Install Dependencies
    ```powershell
-pip install -r requirements.txt
-```
+    pip install -r requirements.txt
+   ```
 
 2) Configure environment variables:
 
@@ -115,4 +115,5 @@ python src/advanced/grid.py BTCUSDT 110000 125000 10 0.01 --dry-run
 
 - Never commit real API keys. Keep them in `.env` and do not push `.env` to Git.
 - Revoke any keys that were shared publicly and generate new Testnet keys.
+
 
